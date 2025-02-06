@@ -1,0 +1,92 @@
+/* General Form Styling */
+.formikForm {
+    padding: 70px 0 30px 0;
+  }
+  
+  .formikForm input,
+  .formikForm textarea {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid #707070;
+    height: 30px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 8px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .formikForm textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  /* Hover effect on input fields */
+  .formikForm input:hover,
+  .formikForm textarea:hover {
+    border-color: #4a90e2;
+  }
+  
+  /* Focus effect */
+  .formikForm input:focus,
+  .formikForm textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  
+  /* Label Styling */
+  .formikForm label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 860px) {
+    .formikForm {
+      padding: 30px 0;
+    }
+  
+    .formikForm input,
+    .formikForm textarea {
+      height: 40px;
+    }
+  }
+  
+  /* Submit Button Styling */
+  .submitWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .buttonInput {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttonInput:hover {
+    background-color: #357ab7;
+  }
+  
+  .buttonInput:disabled {
+    background-color: #a5c4e8;
+    cursor: not-allowed;
+  }
+  
